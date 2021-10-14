@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(./05.ff7_flexbox/bg-full.jpg)no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .con{
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+  }
+  .left{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-grow:1;
+    background:url(./05.ff7_flexbox/main.jpg)no-repeat center center/cover;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left img{
+    width: 30%;
+    object-fit: contain;
+    align-self: center;
+  }
+  .left h1{
+    color: white;
+    align-self: center;
+    margin: 0;
+  }
+  .left p{
+    width: 75%;
+    color: white;
+    align-self: center;
+  }
+  .right{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-grow:1;
+    flex-wrap: wrap;
+  }
+  .top{
+    width: 100%;
+    height: 50%;
+    background:gray url(./05.ff7_flexbox/cloud.png)no-repeat ;
+    background-size:40%; 
+    background-position:95% 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .top h1{
+    margin: 0;
+  }
+  .top p{
+    margin: 0;
+    width: 60%;
+  }
+  .text{
+    width: 85%;
+    height: 60%;
+    align-self: center;
+  }
+  .bottom{
+    width: 100%;
+    height: 50%;
+    background: black url(./05.ff7_flexbox/tifa.png)no-repeat;
+    background-size:40%; 
+    background-position:5% 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .bottom h1{
+    color: white;
+    margin: 0;
+  }
+  .bottom p{
+    color: white;
+    margin: 0;
+    width: 90%;
+  }
+  .text2{
+    width: 62%;
+    height: 50%;
+    align-self: flex-end;
+  } 
+  </style>
+</head>
+<body>
+    <div class="con">
+      <div class="left">
+        <img src="./05.ff7_flexbox/ps4-ff7.png">
+        <h1>AVAILABLE NOW</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aut quo necessitatibus error aspernatur repellendus tempore. Ut laudantium sequi optio voluptate, eius, eveniet, voluptatem inventore ad quaerat sint cupiditate doloribus!</p>
+      </div>
+      <div class="right">
+        <div class="top">
+          <div class="text">
+          <h1>Cloud</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta velit dolore. Voluptatibus iusto tempore, provident repudiandae deleniti commodi aperiam nihil dolorem, officia, numquam ipsum autem eaque dolorum hic error.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta velit dolore. Voluptatibus iusto tempore
+          </p>
+        </div>
+        </div>
+        <div class="bottom">
+          <div class="text2">
+            <h1>Tifa</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at quibusdam nisi exercitationem quod, repellendus nobis asperiores voluptates deleniti libero, ea beatae ab quam esse eligendi modi delectus quisquam facilis.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas odit, qui cumque velit quia
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

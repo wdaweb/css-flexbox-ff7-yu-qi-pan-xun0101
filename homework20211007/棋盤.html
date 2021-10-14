@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "標楷體";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body h1 {
+        font-size: 2.5rem;
+        writing-mode: vertical-lr;
+      }
+      .container {
+        width: 80vh;
+        height: 80vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con {
+        width: 80.4%;
+        height: 90%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .con1 {
+        width: 100%;
+        height: 45%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .con1>div {
+        width: calc(12.5% - 2px);
+        height: calc(25% - 2px);
+        border: 1px solid gray;
+      }
+      .con1>div:nth-child(4) {
+        position: relative;
+      }
+      .con1>div:nth-child(4)::before {
+        content: "";
+        width: 0;
+        height: 290%;
+        border: 1px solid gray;
+        position: absolute;
+        right: 0;
+        top: -45%;
+        transform: rotate(-45deg);
+      }
+      .con1>div:nth-child(5) {
+        position: relative;
+      }
+      .con1>div:nth-child(5)::before {
+        content: "";
+        width: 0;
+        height: 290%;
+        border: 1px solid gray;
+        position: absolute;
+        left: 0;
+        top: -45%;
+        transform: rotate(45deg);
+      }
+      .center {
+        width: 100%;
+        height: 10%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .center>h1 {
+        writing-mode: horizontal-tb;
+      }
+      .con2 {
+        width: 100%;
+        height: 45%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .con2>div {
+        width: calc(12.5% - 2px);
+        height: calc(25% - 2px);
+        border: 1px solid gray;
+      }
+      .con2>div:nth-child(20) {
+        position: relative;
+      }
+      .con2>div:nth-child(20)::before {
+        content: "";
+        width: 0;
+        height: 290%;
+        border: 1px solid gray;
+        position: absolute;
+        right: 0;
+        top: -45%;
+        transform: rotate(-45deg);
+      }
+      .con2>div:nth-child(21) {
+        position: relative;
+      }
+      .con2>div:nth-child(21)::before {
+        content: "";
+        width: 0;
+        height: 290%;
+        border: 1px solid gray;
+        position: absolute;
+        left: 0;
+        top: -45%;
+        transform: rotate(45deg);
+      }
+      /* .chess {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+      } */
+      .con1 > div {
+        position: relative;
+      }
+      .chess {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: white;
+        border: 1px solid black;
+        font-size: 45px;
+        border-radius: 50%;
+        top: -45%;
+        left: -45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ches{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: white;
+        border: 1px solid black;
+        font-size: 45px;
+        border-radius: 50%;
+        top: -45%;
+        right:-45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .con2 > div {
+        position: relative;
+      }
+      .rchess {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        border: 1px solid black;
+        color: red;
+        background: white;
+        font-size: 45px;
+        border-radius: 50%;
+        bottom: -45%;
+        right:-45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      .rches{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background: white;
+        border: 1px solid black;
+        color: red;
+        font-size: 45px;
+        border-radius: 50%;
+        bottom: -45%;
+        left:-45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>棋盤裡，車無輪，馬無韁，叫聲將軍提防提防</h1>
+    <div class="container">
+      <div class="con">
+        <div class="con1">
+          <div>
+            <div class="chess">車</div>
+          </div>
+          <div>
+            <div class="chess">馬</div>
+          </div>
+          <div>
+            <div class="chess">象</div>
+          </div>
+          <div>
+            <div class="chess">士</div>
+          </div>
+          <div>
+            <div class="chess">將</div>
+          </div>
+          <div>
+            <div class="chess">士</div>
+          </div>
+          <div>
+            <div class="chess">象</div>
+          </div>
+          <div>
+            <div class="chess">馬</div>
+            <div class="ches">車</div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div><div class="chess">包</div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div><div class="chess">包</div></div>
+          <div><div class="chess">卒</div></div>
+          <div></div>
+          <div><div class="chess">卒</div></div>
+          <div></div>
+          <div><div class="chess">卒</div></div>
+          <div></div>
+          <div><div class="chess">卒</div></div>
+          <div><div class="ches">卒</div></div>
+        </div>
+        <div class="center">
+          <h1>楚河</h1>
+          <h1>漢界</h1>
+        </div>
+        <div class="con2">
+          <div><div class="rches">兵</div></div>
+          <div><div class="rchess">兵</div></div>
+          <div></div>
+          <div><div class="rchess">兵</div></div>
+          <div></div>
+          <div><div class="rchess">兵</div></div>
+          <div></div>
+          <div><div class="rchess">兵</div></div>
+          <div><div class="rchess">炮</div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div><div class="rchess">炮</div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div><div class="rchess">傌</div>
+          <div class="rches">俥</div></div>
+          <div><div class="rchess">相</div></div>
+          <div><div class="rchess">仕</div></div>
+          <div><div class="rchess">帥</div></div>
+          <div><div class="rchess">仕</div></div>
+          <div><div class="rchess">相</div></div>
+          <div><div class="rchess">傌</div></div>
+          <div><div class="rchess">俥</div></div>
+        </div>
+      </div>
+    </div>
+    <h1>圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</h1>
+  </body>
+</html>
